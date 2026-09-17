@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RH Studio</title>
+  <link rel="stylesheet" href="/static/styles.css?v=3" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="mark">RH</span>
+        <div>
+          <strong>RH Studio</strong>
+          <em>把 RunningHub 应用变成你的后台工具</em>
+        </div>
+      </div>
+      <nav>
+        <button data-view="library" class="active">工具库</button>
+        <button data-view="run">运行</button>
+        <button data-view="tasks">任务</button>
+        <button data-view="settings">设置</button>
+      </nav>
+      <div class="sidebar-foot">
+        <p>输入 webappId，自动拉取 nodeInfoList，按 fieldType 渲染表单。</p>
+      </div>
+    </aside>
+    <main>
+      <header class="topbar">
+        <div>
+          <h1 id="page-title">工具库</h1>
+          <p id="page-sub">只填应用 ID 就能拉参数，不需要 API Key。提交运行才需要 Key。</p>
+        </div>
+        <div class="top-actions" id="top-actions"></div>
+      </header>
+      <section id="view" class="view"></section>
+    </main>
+  </div>
+  <div id="modal" class="modal" hidden></div>
+  <div id="toasts" class="toasts"></div>
+  <script src="/static/app.js?v=3"></script>
+</body>
+</html>
